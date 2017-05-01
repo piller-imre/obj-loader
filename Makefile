@@ -4,7 +4,9 @@ CFLAGS = -Iinclude -g -O2 -std=c99 -Wall -Wextra -Wpedantic
 LDFLAGS = 
 
 SOURCES = \
+		src/info.c \
         src/model.c \
+		src/parser.c \
 		loader.c
 
 OBJECTS = $(SOURCES:.c=.o)
