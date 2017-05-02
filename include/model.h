@@ -1,8 +1,11 @@
 #ifndef MODEL_H
 #define MODEL_H
 
+#include "info.h"
 #include "parser.h"
 #include "vertex.h"
+
+#include <stdio.h>
 
 /**
  * Face point with vertex, texture and normal coordinates
@@ -35,7 +38,12 @@ struct Model
 /**
  * Load OBJ model from file.
  */
-int load_model(const char* filename, struct Model* model);
+int load_model(struct Model* model, const char* filename);
+
+/**
+ * Collect model information from the OBJ file.
+ */
+void collect_model_info(struct ModelInfo* model_info, FILE* obj_file);
 
 /**
  * Release the allocated memory of the model.
