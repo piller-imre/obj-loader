@@ -10,7 +10,7 @@ int load_model(struct Model *model, const char *filename)
     obj_file = fopen(filename, "r");
     if (obj_file == NULL) {
         printf("ERROR: Unable to open '%s' file!\n", filename);
-        return FALSE;
+        return false;
     }
 
     collect_model_info(&model_info, obj_file);
@@ -19,7 +19,7 @@ int load_model(struct Model *model, const char *filename)
     // TODO: Collect model data!
 
     fclose(obj_file);
-    return TRUE;
+    return true;
 }
 
 void collect_model_info(struct ModelInfo *model_info, FILE *obj_file)

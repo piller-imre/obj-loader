@@ -3,6 +3,9 @@
 
 #include "vertex.h"
 
+#include <stdbool.h>
+
+
 /**
  * The indices of the face points
  */
@@ -24,22 +27,22 @@ struct FaceData
 /**
  * Check that the line contains vertex data.
  */
-Boolean is_vertex_data(const char* line);
+bool is_vertex_data(const char* line);
 
 /**
  * Check that the line contains normal data.
  */
-Boolean is_normal_data(const char* line);
+bool is_normal_data(const char* line);
 
 /**
  * Check that the line contains texture vertex data.
  */
-Boolean is_texture_vertex_data(const char* line);
+bool is_texture_vertex_data(const char* line);
 
 /**
  * Check that the line contains face data.
  */
-Boolean is_face_data(const char* line);
+bool is_face_data(const char* line);
 
 /**
  * Read the vertex data from the line.

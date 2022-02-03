@@ -1,11 +1,6 @@
 #ifndef VERTEX_H
 #define VERTEX_H
 
-#define FALSE 0
-#define TRUE 1
-
-typedef int Boolean;
-
 /**
  * Spatial point in Descartes coordinate system
  */

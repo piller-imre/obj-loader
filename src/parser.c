@@ -1,27 +1,27 @@
 #include "parser.h"
 
-Boolean is_vertex_data(const char *line)
+bool is_vertex_data(const char *line)
 {
     // TODO: Check that the line contains vertex data!
-    return FALSE;
+    return false;
 }
 
-Boolean is_normal_data(const char *line)
+bool is_normal_data(const char *line)
 {
     // TODO: Check that the line contains normal data!
-    return FALSE;
+    return false;
 }
 
-Boolean is_texture_vertex_data(const char *line)
+bool is_texture_vertex_data(const char *line)
 {
     // TODO: Check that the line contains texture vertex data!
-    return FALSE;
+    return false;
 }
 
-Boolean is_face_data(const char *line)
+bool is_face_data(const char *line)
 {
     // TODO: Check that the line contains face data!
-    return FALSE;
+    return false;
 }
 
 void read_vertex_data(struct Vertex *vertex, const char *line)
